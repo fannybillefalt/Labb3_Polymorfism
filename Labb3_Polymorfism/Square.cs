@@ -8,8 +8,9 @@ namespace Labb3_Polymorfism
 {
     internal class Square : Geometry
     {
-        public double Radius { get; set; }
-        public override double Area()
+    
+        public decimal Circumference { get; set; }
+        public override float AreaMethod()
         {
             return
         }

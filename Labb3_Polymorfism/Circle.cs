@@ -8,11 +8,19 @@ namespace Labb3_Polymorfism
 {
     internal class Circle : Geometry
     {
-        public double Radius { get; set; }
+        
+        public float Radius { get; set; }
+        public float Circumference { get; set; }
 
-        public override double Area()
+        public Circle()
         {
-            return
+            Radius = 5;
+            Circumference = 6;
+        }
+        public override float AreaMethod()
+        {
+            float circleArea = Radius * Radius * _pi;
+            return circleArea;
         }
     }
 }

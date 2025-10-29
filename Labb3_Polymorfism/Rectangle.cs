@@ -8,8 +8,9 @@ namespace Labb3_Polymorfism
 {
     internal class Rectangle : Geometry
     {
-        public double Radius { get; set; }
-        public override double Area()
+        public decimal Area { get; set; }
+
+        public override float AreaMethod()
         {
             return
         }
