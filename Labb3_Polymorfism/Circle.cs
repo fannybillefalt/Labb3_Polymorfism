@@ -7,20 +7,17 @@ using System.Threading.Tasks;
 namespace Labb3_Polymorfism
 {
     internal class Circle : Geometry
-    {
-        
-        public float Radius { get; set; }
-        public float Circumference { get; set; }
+    {   
+        private double _pi = 3.14159;
+        public double Radius { get; set; }
 
         public Circle()
         {
             Radius = 5;
-            Circumference = 6;
         }
-        public override float AreaMethod()
+        public override double AreaMethod()
         {
-            float circleArea = Radius * Radius * _pi;
-            return circleArea;
+            return Radius * Radius * _pi;
         }
     }
 }

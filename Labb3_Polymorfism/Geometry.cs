@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace Labb3_Polymorfism
 {
-    internal class Geometry
+    //Using abstact because I will not create an object from this class,
+    //only sub-classes.
+    public abstract class Geometry
     {
-        public float _pi = 3.141f;
-        public double Area { get; set; }
-        public float Radius { get; set; }
-        public float Volume { get; set; }
-        public float Circumference { get; set; }
-        public virtual float AreaMethod()
-        {
-            float circleArea = Radius * Radius * _pi;
-            return circleArea;
-        }
+        public double Radius { get; set; }
+
+        //Since this method doesn't need to do anything in this class,
+        //I made it abstract and override it in the subclasses.
+        public abstract double AreaMethod();
+        
     }
 }
