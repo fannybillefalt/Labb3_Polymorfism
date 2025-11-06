@@ -8,11 +8,18 @@ namespace Labb3_Polymorfism
 {
     internal class Rectangle : Geometry
     {
-        public decimal Area { get; set; }
+        public double Height { get; set; }
+        public double Lenght { get; set; }
 
-        public override float AreaMethod()
+        public Rectangle()
         {
-            return
+            Height = 5;
+            Lenght = 10;
+        }
+
+        public override double AreaMethod()
+        {
+            return Height * Lenght;
         }
     }
 }
